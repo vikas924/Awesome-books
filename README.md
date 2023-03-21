@@ -4,7 +4,7 @@
   <img src="readme-logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Global confrence</b></h3>
+  <h3><b>Awesome books</b></h3>
 
 </div>
 
@@ -15,7 +15,6 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-  - [🚀 Live Video](#demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -71,7 +70,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://vikas924.github.io/first-capstone/)
+- [Live Demo Link]( https://vikas924.github.io/Awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +136,7 @@ You can deploy this project using:
 GitHub Pages
 
 ```sh
- https://vikas924.github.io/first-capstone/
+  https://vikas924.github.io/Awesome-books/
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -168,7 +167,7 @@ GitHub Pages
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [https://github.com/vikas924/Portfolio-setup-and-mobilefirst/issues](../../issues/).
+Feel free to check the [https://github.com/vikas924/Awesome-books/issues](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -192,6 +191,6 @@ I would like to thank Microverse for this exercise.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/vikas924/Portfolio-setup-and-mobilefirst/blob/d8f2dc0abadc4f26ed79a3c2721e7c12df6164c0/LICENSE) licensed.
+This project is [MIT](https://github.com/vikas924/Awesome-books/blob/21d8a5ca87bfb75d63be1213dc5a8083d0696449/license) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
