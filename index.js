@@ -14,7 +14,7 @@ function add() {
     localStorage.setItem('array', JSON.stringify(arr));
   }
 }
-//this will remove a book
+// this will remove a book
 function remove() {
   const parent = document.querySelector('#list');
   const button = document.querySelectorAll('#button');
