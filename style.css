@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0 0 0;
+  gap: 2rem;
+}
+
+#heading1 {
+  text-align: center;
+}
+
+#heading2 {
+  text-align: center;
+}
+
+#list {
+  border: 0.2rem solid black;
+  width: 60%;
+  max-width: 768px;
+  padding: 0.1rem;
+}
+
+.div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0.1rem;
+}
+
+.liner {
+  border: 1.3px solid black;
+  width: 7rem;
+}
+
+.background {
+  background-color: rgb(141, 141, 141);
+}
+
+.form {
+  max-width: 20rem;
+  width: 100%;
+}
+
+#title {
+  width: 100%;
+}
+
+#author {
+  width: 100%;
+}
+
+.add {
+  width: 3rem;
+  border-radius: 0;
+  border-color: black;
+}
+
+.formbutton {
+  display: flex;
+  justify-content: flex-end;
+}
