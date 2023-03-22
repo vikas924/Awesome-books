@@ -151,6 +151,12 @@ GitHub Pages
 - Twitter: [@vikas410190](https://twitter.com/vikas410190)
 - LinkedIn: [Vikas Singh](https://www.linkedin.com/in/vikas-singh-586a07132/)
 
+👤 Addisalem Seifu
+
+- GitHub: [@addisalemseifu](https://github.com/githubhandle)
+- Twitter: [@Addisalem Seifu](https://twitter.com/twitterhandle)
+- LinkedIn: [addisalem seifu](https://linkedin.com/in/linkedinhandle)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
