@@ -14,7 +14,7 @@ function add() {
     localStorage.setItem('array', JSON.stringify(arr));
   }
 }
-
+//this will remove a book
 function remove() {
   const parent = document.querySelector('#list');
   const button = document.querySelectorAll('#button');
@@ -24,7 +24,7 @@ function remove() {
   arr.splice(butto, 1);
   localStorage.setItem('array', JSON.stringify(arr));
 }
-
+// This will display a book that is instantly added
 function display() {
   const list = document.querySelector('#list');
   const title = document.querySelector('#title');
