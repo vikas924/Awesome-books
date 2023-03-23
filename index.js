@@ -1,12 +1,22 @@
-const arr = JSON.parse(localStorage.getItem('array')) || [];
-
 class Books {
   constructor(title, author) {
     this.title = title;
     this.author = author;
   }
 
+  add() {
+    const booklist = JSON.parse(localStorage.getItem('array')) || [];
+    const value1 = this.title.trim();
+    const value2 = this.author.trim();
+    if ((value1.length !== 0) && (value2.length !== 0)) {
+      booklist.push(this);
+      localStorage.setItem('array', JSON.stringify(booklist));
+      this.display();
+    }
+  }
+
   display() {
+    const booklist = JSON.parse(localStorage.getItem('array'));
     const list = document.querySelector('#list');
     const value1 = this.title.trim();
     const value2 = this.author.trim();
@@ -14,12 +24,12 @@ class Books {
     div.classList.add('div');
     div.innerHTML = `<div class="paradiv" <p>"${value1}" by "${value2}"</p></div><div class="buttondiv"><button id="button">Remove</button></div>`;
     list.appendChild(div);
-    for (let i = 0; i < arr.length; i += 1) {
+    for (let i = 0; i < booklist.length; i += 1) {
       const button = document.querySelectorAll('#button');
       button[i].addEventListener('click', Books.remove);
     }
     const change = document.querySelectorAll('.div');
-    for (let i = 0; i < arr.length; i += 1) {
+    for (let i = 0; i < booklist.length; i += 1) {
       if (i % 2 === 0) {
         change[i].classList.add('background');
       }
@@ -27,17 +37,18 @@ class Books {
   }
 
   static displayall() {
+    const booklist = JSON.parse(localStorage.getItem('array')) || [];
     const list = document.querySelector('#list');
-    for (let i = 0; i < arr.length; i += 1) {
+    for (let i = 0; i < booklist.length; i += 1) {
       const div = document.createElement('div');
       div.classList.add('div');
-      div.innerHTML = `<div class="paradiv"><p>"${arr[i].title}" by "${arr[i].author}"</p></div><div class="buttondiv"><button id="button">Remove</button></div>`;
+      div.innerHTML = `<div class="paradiv"><p>"${booklist[i].title}" by "${booklist[i].author}"</p></div><div class="buttondiv"><button id="button">Remove</button></div>`;
       list.appendChild(div);
       const button = document.querySelectorAll('#button');
       button[i].addEventListener('click', Books.remove);
     }
     const change = document.querySelectorAll('.div');
-    for (let i = 0; i < arr.length; i += 1) {
+    for (let i = 0; i < booklist.length; i += 1) {
       if (i % 2 === 0) {
         change[i].classList.add('background');
       }
@@ -45,31 +56,26 @@ class Books {
   }
 
   static remove() {
+    const booklist = JSON.parse(localStorage.getItem('array'));
     const parent = document.querySelector('#list');
     const button = document.querySelectorAll('#button');
     const butto = Array.from(button).indexOf(this);
     const reele = this.parentNode.parentNode;
     parent.removeChild(reele);
-    arr.splice(butto, 1);
-    localStorage.setItem('array', JSON.stringify(arr));
+    booklist.splice(butto, 1);
+    localStorage.setItem('array', JSON.stringify(booklist));
   }
 }
 
 Books.displayall();
 
-function add() {
+function even() {
   const title = document.querySelector('#title');
   const author = document.querySelector('#author');
-  const value1 = title.value.trim();
-  const value2 = author.value.trim();
-  if ((value1.length !== 0) && (value2.length !== 0)) {
-    const books = new Books(value1, value2);
-    arr.push(books);
-    localStorage.setItem('array', JSON.stringify(arr));
-    books.display();
-  }
+  const books = new Books(title.value, author.value);
+  books.add();
   title.value = '';
   author.value = '';
 }
 
-document.querySelector('.add').addEventListener('click', add);
+document.querySelector('.add').addEventListener('click', even);
