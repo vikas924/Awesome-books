@@ -1,10 +1,3 @@
-const change = document.querySelectorAll('.div');
-    for (let i = 0; i < arr.length; i += 1) {
-      if (i % 2 === 0) {
-        change[i].classList.add('background');
-      }
-    }
-vikas chib 3:18 PM
 const arr = JSON.parse(localStorage.getItem('array')) || [];
 
 class Books {
