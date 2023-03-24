@@ -79,3 +79,38 @@ function even() {
 }
 
 document.querySelector('.add').addEventListener('click', even);
+
+const timeDate = document.querySelector('.date');
+
+const dateAndTime = () => {
+  setInterval(() => {
+    const date = new Date().toUTCString();
+    timeDate.innerHTML = date;
+  }, 0);
+};
+
+dateAndTime();
+
+function showhide() {
+  const list = document.querySelector('#List');
+  const add = document.querySelector('#Add-new');
+  const contact = document.querySelector('#Contact');
+  if ((this.id === 'nav1')) {
+    list.style.display = 'flex';
+    add.style.display = 'none';
+    contact.style.display = 'none';
+  } else if ((this.id === 'nav2')) {
+    list.style.display = 'none';
+    add.style.display = 'flex';
+    contact.style.display = 'none';
+  } else if ((this.id === 'nav3')) {
+    list.style.display = 'none';
+    add.style.display = 'none';
+    contact.style.display = 'flex';
+  }
+}
+
+const link = document.querySelectorAll('.navli');
+for (let i = 0; i <= link.length - 1; i += 1) {
+  link[i].addEventListener('click', showhide);
+}
