@@ -62,7 +62,7 @@
 
 - **[Add books]**
 - **[Remove books]**
-- **[Store in local storage]**
+- **[Show different sections on click]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,21 +151,13 @@ GitHub Pages
 - Twitter: [@vikas410190](https://twitter.com/vikas410190)
 - LinkedIn: [Vikas Singh](https://www.linkedin.com/in/vikas-singh-586a07132/)
 
-👤 Addisalem Seifu
-
-- GitHub: [@addisalemseifu](https://github.com/githubhandle)
-- Twitter: [@Addisalem Seifu](https://twitter.com/twitterhandle)
-- LinkedIn: [addisalem seifu](https://linkedin.com/in/linkedinhandle)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Add Styles]**
-- [ ] **[Add contact]**
-- [ ] **[Add navigation]**
+- [ ] **[Add hover effects]**
+- [ ] **[Add animations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

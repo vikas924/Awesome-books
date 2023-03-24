@@ -8,18 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="main">
+    <header class="header">
+        <div class="wrap">
+        <a id="logo" href="#">Awesome Books</a>
+        <nav class="navbar">
+            <ul class="navul">
+                <li id="nav1" class="navli"><a class="navlink" href="#List">List</a></li>
+                <li id="nav2" class="navli"><a class="navlink" href="#Add-new">Add new</a></li>
+                <li id="nav3" class="navli"><a class="navlink" href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+       </div>
+       <div class="date"></div>
+    </header>
+    <section id="List" class="booklist">
     <h1 id="heading1">All Awesome books</h1>
     <div id="list"></div>
-    <span class="liner"></span>
+    </section>
+    <section id="Add-new" class="addnew">
     <h2 id="heading2">Add a new book</h2>
    <form action="" class="form">
     <div>
-    <input type="text" id="title" placeholder="Title"/>
+    <input type="text" id="title" class="forminput" placeholder="Title"/>
 </div>
 <br>
 <div>
-    <input type="text" id="author" placeholder="Author"/>
+    <input type="text" id="author" class="forminput" placeholder="Author"/>
 </div>
 <br>
  <div class="formbutton">
@@ -27,6 +41,22 @@
 </div>
    </form>
    </section>
+   <section id="Contact" class="contact">
+    <h1 class="contacthead">Contact information</h1>
+    <div class="contactdiv">
+    <p class="contactpara">Do have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
+    <ul class="contactul">
+    <li class="contactli">Our e-mail: mail@mail.com</li>
+    <li class="contactli">Our phone number: 0043586534422</li>
+    <li class="contactli">Our address: Streetname 22, 84503 City, Country</li>
+    </ul>
+    </div>
+   </section>
+   <footer class="footer">
+        <div class="footerdiv">
+            <p class="footerpara">Copyright ...</p>
+        </div>
+    </footer>
 </body>
 <script src="./index.js"></script>
 </html>

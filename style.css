@@ -3,65 +3,178 @@
   padding: 0;
 }
 
-.main {
+.header {
+  position: fixed;
+  width: 100%;
+  top: 1rem;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+  margin-inline: 1rem;
+  padding-block: 0.4rem;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 1rem;
+  padding: 1.2rem 1rem 1.2rem 1.2rem;
+  border: 0.1rem solid black;
+  background-color: #fff;
+}
+
+#logo {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+.booklist {
   display: flex;
   flex-direction: column;
+  padding: 8rem 0 8rem 0;
   align-items: center;
-  justify-content: center;
-  padding: 6rem 0 0 0;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 #heading1 {
   text-align: center;
+  font-size: 2rem;
 }
 
 #heading2 {
   text-align: center;
+  font-size: 2rem;
 }
 
 #list {
-  border: 0.2rem solid black;
-  width: 60%;
   max-width: 768px;
-  padding: 0.1rem;
+  border: 0.2rem solid black;
+  width: 90%;
+  padding: 0.2rem;
 }
 
 .div {
   display: flex;
   justify-content: space-between;
-  padding: 0.2rem 0.1rem;
-}
-
-.liner {
-  border: 1.3px solid black;
-  width: 7rem;
+  padding: 0.5rem 0.2rem;
 }
 
 .background {
   background-color: rgb(141, 141, 141);
 }
 
+.addnew {
+  display: none;
+  flex-direction: column;
+  padding: 10rem 0 0 0;
+  align-items: center;
+  gap: 4rem;
+}
+
 .form {
-  max-width: 20rem;
-  width: 100%;
+  max-width: 25rem;
+  width: 50%;
 }
 
-#title {
-  width: 100%;
-}
-
-#author {
-  width: 100%;
+.forminput {
+  width: 97%;
+  font-size: 0.9rem;
+  padding-block: 0.3rem;
+  padding-inline: 0.2rem;
+  border: 0.1rem solid black;
 }
 
 .add {
-  width: 3rem;
   border-radius: 0;
   border-color: black;
+  padding-block: 0.3rem;
+  padding-inline: 0.8rem;
 }
 
 .formbutton {
   display: flex;
   justify-content: flex-end;
+  padding-block: 0.3rem;
+}
+
+.contact {
+  display: none;
+  flex-direction: column;
+  padding: 8rem 0 0 0;
+  align-items: center;
+  gap: 4rem;
+}
+
+.contactdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.contacthead {
+  font-size: 1.5rem;
+}
+
+.contactpara {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contactul {
+  padding-left: 1rem;
+}
+
+.contactli {
+  font-weight: bold;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 1rem;
+}
+
+.footerdiv {
+  background-color: #fff;
+  margin-inline: 1rem;
+  padding: 1.2rem 1rem 1.2rem 1.2rem;
+  border: 0.1rem solid black;
+}
+
+.footerpara {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .contacthead {
+    font-size: 2rem;
+  }
+
+  .contactpara {
+    font-size: 1.3rem;
+  }
+
+  .contactli {
+    font-size: 1.3rem;
+  }
 }
